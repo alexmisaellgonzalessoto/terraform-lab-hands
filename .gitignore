@@ -1,0 +1,18 @@
+# Proveedores descargados y archivos internos
+.terraform/
+
+# Estado local y copias de seguridad
+*.tfstate
+*.tfstate.*
+.terraform.tfstate.lock.info
+
+# Valores privados
+*.tfvars
+*.tfvars.json
+.env
+.env.*
+
+# Planes guardados y registros de errores
+*.tfplan
+crash.log
+crash.*.log
