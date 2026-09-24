@@ -35,3 +35,6 @@ resource "docker_container" "web_dev" {
     file    = "/usr/share/nginx/html/index.html"
   }
 }
+resource "docker_image" "node" {
+  name = "node:24-alpine"
+}
