@@ -10,3 +10,6 @@ terraform {
 provider "docker" {
   context = "desktop-linux"
 }
+resource "docker_image" "nginx" {
+  name = "nginx:1.31.6"
+}
