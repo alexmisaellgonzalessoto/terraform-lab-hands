@@ -29,4 +29,9 @@ resource "docker_container" "web_dev" {
   networks_advanced {
     name = docker_network.dev.name
   }
+
+  upload {
+    content = file("${path.module}/frontend/index.html")
+    file    = "/usr/share/nginx/html/index.html"
+  }
 }
