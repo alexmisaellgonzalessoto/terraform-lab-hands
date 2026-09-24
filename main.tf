@@ -13,3 +13,7 @@ provider "docker" {
 resource "docker_image" "nginx" {
   name = "nginx:1.31.6"
 }
+resource "docker_network" "dev" {
+  name   = "lab-dev"
+  driver = "bridge"
+}
